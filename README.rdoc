@@ -1,6 +1,29 @@
-= sinatra-subroutes
+sinatra-subroutes
+=================
 
-Description goes here.
+Create Sinatra routes that respond to the subdomain defined, similar to the built in user_agent option. Compiled into a gem from these sources:
+http://tannerburson.com/2009/01/extracting-subdomains-in-sinatra.html
+http://toms-toolbox.com/2010/04/sinatra-native-subdomain-routing/
+
+Install
+-------
+<pre>
+  gem install sinatra-subroutes
+</pre>
+
+Usage
+-----
+<pre>
+require 'sinatra'
+require 'sinatra-subroutes'
+
+set :tld_size, 2 # Use this for domains such as example.co.uk, default is 1
+
+get '/', :subdomain => /subdomain/ do
+  'You're at the root of the "subdomain" subdomain'
+end
+</pre>
+
 
 == Contributing to sinatra-subroutes
  
