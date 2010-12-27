@@ -5,26 +5,27 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra-subroutes}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Westendorf"]
-  s.date = %q{2010-12-21}
+  s.date = %q{2010-12-27}
   s.description = %q{Restrict routes in Sinatra based of the Subdomain in the URI}
   s.email = %q{daniel@prowestech.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
     "VERSION",
     "lib/sinatra-subroutes.rb",
+    "sinatra-subroutes.gemspec",
     "test/helper.rb",
     "test/test_sinatra-subroutes.rb"
   ]
