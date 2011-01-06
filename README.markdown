@@ -1,3 +1,5 @@
+It looks like this functionality exists in Sinatra already with the <pre>:host_name => /subdomain.example.com/</pre>
+
 sinatra-subroutes
 =================
 
